@@ -1,0 +1,179 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "MMTShopApi",
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "https://localhost:44343"
+    }
+  ],
+  "paths": {
+    "/api/MMTShop/get-featured-products": {
+      "get": {
+        "tags": [
+          "MMTShop"
+        ],
+        "operationId": "GetFeaturedProducts",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductResultViewModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MMTShop/get-categories": {
+      "get": {
+        "tags": [
+          "MMTShop"
+        ],
+        "operationId": "GetCategories",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CategoryResultViewModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MMTShop/get-products-by-category": {
+      "get": {
+        "tags": [
+          "MMTShop"
+        ],
+        "operationId": "GetProductsByCategory",
+        "parameters": [
+          {
+            "name": "categoryId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductResultViewModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CategoryResultViewModel": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MMTCategory"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MMTCategory": {
+        "required": [
+          "id",
+          "name",
+          "skuPrefix"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "name": {
+            "type": "string"
+          },
+          "skuPrefix": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MMTProduct": {
+        "required": [
+          "description",
+          "id",
+          "name",
+          "price",
+          "sku"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "sku": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "categoryID": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "category": {
+            "$ref": "#/components/schemas/MMTCategory"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProductResultViewModel": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MMTProduct"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
