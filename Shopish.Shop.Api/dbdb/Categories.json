@@ -1,0 +1,27 @@
+[
+  {
+    "ID": "1F1A61B3-A3CC-4229-9E27-13B90EC7F76C",
+    "Name": "Home                                              ",
+    "SKUPrefix": "1         "
+  },
+  {
+    "ID": "4CAC50AC-82BC-4887-8766-18EF71DCFD80",
+    "Name": "Fitness                                           ",
+    "SKUPrefix": "4         "
+  },
+  {
+    "ID": "DE644C81-5CD2-492D-A391-26EC48AD06ED",
+    "Name": "Garden                                            ",
+    "SKUPrefix": "2         "
+  },
+  {
+    "ID": "56CCB448-C92E-4ABA-97A0-530B4A8B859F",
+    "Name": "Electronics                                       ",
+    "SKUPrefix": "3         "
+  },
+  {
+    "ID": "90756D8B-0CBB-47F6-BBF1-8A82411355CE",
+    "Name": "Toys                                              ",
+    "SKUPrefix": "5         "
+  }
+]

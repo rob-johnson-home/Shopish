@@ -6,6 +6,6 @@ namespace Shopish.Shop.Api.Domain.Model
     public abstract class EntityBase
     {
         [Required, Key]
-        public Guid ID { get; protected set; }
+        public Guid ID { get; set; }
     }
 }

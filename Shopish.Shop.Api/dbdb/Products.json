@@ -1,0 +1,42 @@
+[
+  {
+    "ID": "4765BBB8-2242-482C-A7EE-09833DFA7FA4",
+    "SKU": "40001     ",
+    "Name": "Test Fitness Product                              ",
+    "Description": "Test Fitness Product Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ",
+    "Price": 1200.00,
+    "CategoryID": "4CAC50AC-82BC-4887-8766-18EF71DCFD80"
+  },
+  {
+    "ID": "6A44EE55-3173-462F-8166-3D6D6D605C0F",
+    "SKU": "50001     ",
+    "Name": "Test Toys Product                                 ",
+    "Description": "Test Toys Product Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ",
+    "Price": 29.99,
+    "CategoryID": "90756D8B-0CBB-47F6-BBF1-8A82411355CE"
+  },
+  {
+    "ID": "390312EA-68EC-4A26-8439-62E71054C8AA",
+    "SKU": "30001     ",
+    "Name": "Test Electronics Product                          ",
+    "Description": "Test Electronics Product Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ",
+    "Price": 199.99,
+    "CategoryID": "56CCB448-C92E-4ABA-97A0-530B4A8B859F"
+  },
+  {
+    "ID": "391BE8F6-A2B7-4891-9E25-80FEBBF8EEDC",
+    "SKU": "20001     ",
+    "Name": "Test Garden Product                               ",
+    "Description": "Test Garden Product Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+    "Price": 7.56,
+    "CategoryID": "DE644C81-5CD2-492D-A391-26EC48AD06ED"
+  },
+  {
+    "ID": "A237379D-7416-44B7-AC84-BA0E0309AFA0",
+    "SKU": "10001     ",
+    "Name": "Test Home Product                                 ",
+    "Description": "Test Home Product Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ",
+    "Price": 5.99,
+    "CategoryID": "1F1A61B3-A3CC-4229-9E27-13B90EC7F76C"
+  }
+]
